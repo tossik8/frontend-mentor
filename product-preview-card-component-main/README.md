@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://main--clinquant-druid-ed9ba2.netlify.app/)
+- Live Site URL: [Netlify](https://main--clinquant-druid-ed9ba2.netlify.app/)
 
 ## My process
 
