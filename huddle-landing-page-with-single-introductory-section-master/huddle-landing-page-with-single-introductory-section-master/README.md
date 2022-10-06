@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://fantastic-empanada-20f6c3.netlify.app/](https://fantastic-empanada-20f6c3.netlify.app/)
+- Live Site URL: Netlify](https://fantastic-empanada-20f6c3.netlify.app/)
 
 ## My process
 
