@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://bejewelled-crumble-f4aa24.netlify.app/](https://bejewelled-crumble-f4aa24.netlify.app/)
+- Live Site URL: [Netlify](https://bejewelled-crumble-f4aa24.netlify.app/)
 
 ## My process
 
