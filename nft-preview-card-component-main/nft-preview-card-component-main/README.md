@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://rococo-vacherin-53e5b0.netlify.app/](https://rococo-vacherin-53e5b0.netlify.app/)
+- Live Site URL: [Netlify](https://rococo-vacherin-53e5b0.netlify.app/)
 
 ## My process
 
