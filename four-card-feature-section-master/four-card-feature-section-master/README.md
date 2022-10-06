@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/tossik8/four-card-feature-section](https://github.com/tossik8/four-card-feature-section)
-- Live Site URL: [https://tossik8.github.io/four-card-feature-section/](https://tossik8.github.io/four-card-feature-section/)
+- Live Site URL: [Netlify](https://legendary-souffle-dc077b.netlify.app/)
 
 ## My process
 
