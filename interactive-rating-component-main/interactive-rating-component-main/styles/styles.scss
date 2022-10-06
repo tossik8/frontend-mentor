@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(216, 12%, 8%);
+}
+main{
+    color: hsl(217, 12%, 63%);
+    width: 370px;
+    background-color:  hsl(213, 19%, 18%);
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 25px;
+    .wrapper{
+        margin: 20px;
+        .illustration{
+            display: block;
+        }
+        .oval{
+            border-radius: 15px;
+            width: 200px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0 10px 0;
+            color:hsl(25, 97%, 53%);
+            background-color: hsl(216, 12%, 8%);
+        }
+        .text{
+
+            h1{
+                color: hsl(0, 0%, 100%);
+                font-weight: 700;
+            }
+            p{
+                margin-top: -10px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+        .circles{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .circle{
+            background-color: hsl(216, 12%, 8%);
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-radius: 50px;
+            #label-option-1{
+                margin-left: 1.2px;
+            }
+            .radio-button{
+                margin-left: 3px;
+                visibility: hidden;
+                cursor: inherit;
+            }
+            label{
+                cursor: inherit;
+            }
+        }
+
+        button{
+            background-color: hsl(25, 97%, 53%);
+            color:hsl(0, 0%, 100%);
+            border:none;
+            width: 100%;
+            height: 40px;
+            border-radius: 25px;
+            margin-top: 20px;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: hsl(0, 0%, 100%);
+            color:hsl(25, 97%, 53%);
+        }
+        .effects{
+            justify-content: left;
+            cursor: pointer;
+
+        }
+
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+         width: 100%;
+    }
+    main{
+        top: 20%;
+        left: 5px;
+        width: 300px;
+        .wrapper{
+            .circles{
+                gap: 10px;
+                .circle{
+                    width: 40px;
+                    height: 40px;
+                    .radio-button{
+                        margin-left: -0.5px;
+                    }
+                    label{
+                        margin-left: -1px;
+                    }
+                }
+            }
+
+        }
+    }
+}

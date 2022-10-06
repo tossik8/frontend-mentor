@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-left: 5%;
+  background: url(../images/bg-desktop.svg);
+  background-color: hsl(257deg, 40%, 49%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body header {
+  margin-top: 2%;
+}
+body main {
+  margin-top: 5%;
+  height: 95%;
+}
+body main .main-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body main .main-content .chats {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+}
+body main .main-content .intro {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 25%;
+}
+body main .main-content .intro h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+body main .main-content .intro p {
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  width: 118%;
+  line-height: 1.6;
+  color: hsl(0deg, 0%, 100%);
+}
+body main .main-content .intro button {
+  background-color: hsl(0deg, 0%, 100%);
+  border: none;
+  color: hsl(257deg, 40%, 49%);
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-family: "Open sans", sans-serif;
+  box-shadow: 9px 7px 17px 4px rgba(44, 39, 39, 0.32);
+}
+body main .main-content .intro button:hover {
+  background-color: hsl(300deg, 69%, 71%);
+  cursor: pointer;
+}
+body main .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 5% 0 0 80%;
+}
+body main .social-links .link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  border: 1px solid white;
+}
+body main .social-links .link svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+body main .social-links .link:hover {
+  border: 1px solid hsl(300deg, 69%, 71%);
+  cursor: pointer;
+}
+body main .social-links .link:hover svg {
+  fill: hsl(300deg, 69%, 71%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url("../images/bg-mobile.svg");
+    background-color: hsl(257deg, 40%, 49%);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  body header svg {
+    width: 100px;
+    height: 100px;
+    margin-left: 10%;
+  }
+  body main .main-content .chats {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: -50px;
+  }
+  body main .main-content .intro {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  body main .main-content .intro h1 {
+    font-size: 22px;
+    width: 80%;
+  }
+  body main .main-content .intro p {
+    font-size: 16px;
+    width: 200px;
+    line-height: 1.5;
+  }
+  body main .social-links {
+    margin-top: 15px;
+    margin-left: 30%;
+  }
+}/*# sourceMappingURL=styles.css.map */

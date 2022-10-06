@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script  src="./index.js"></script>
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: hsl(0, 0%, 100%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  <main>
+    <div class="wrapper">
+      <div class="circle no-effects">
+        <svg width="17" class="star" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0
+          0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
+      </div>
+      <div class="text">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      </div>
+      <form id="form" method="get" action="./thanks.html">
+        <div class="circles">
+          <div class="circle effects">
+            <input id="option-1" type="radio" name="rating" value="1" class="radio-button">
+            <label id="label-option-1">1</label>
+          </div>
+          <div class="circle effects" >
+            <input id="option-2" type="radio" name="rating" value="2" class="radio-button">
+            <label>2</label>
+
+          </div>
+          <div class="circle effects">
+            <input  id="option-3" type="radio" name="rating" value="3" class="radio-button">
+            <label >3</label>
+
+          </div>
+          <div class="circle effects">
+            <input id="option-4" type="radio" name="rating" value="4" class="radio-button">
+            <label>4</label>
+
+          </div>
+          <div class="circle effects">
+            <input id="option-5" type="radio" name="rating" value="5" class="radio-button">
+            <label>5</label>
+          </div>
+        </div>
+
+        <button type="submit">SUBMIT</button>
+     </form>
+   </div>
+ </main>
+  <!-- Rating state end -->
+ <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/tossik8">Nikita</a>.
+  </div>
+ </footer>
+</body>
+</html>

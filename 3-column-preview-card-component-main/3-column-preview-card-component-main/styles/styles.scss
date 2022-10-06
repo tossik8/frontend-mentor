@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11rem;
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 13.2rem;
+
+        #sedan{
+            background-color: hsl(31, 77%, 52%);
+            border-radius: 10px 0 0 10px;
+            button{
+                color:hsl(31, 77%, 52%);
+            }
+            button:hover{
+                color:hsl(0, 0%, 95%);
+            }
+
+
+        }
+        #suv{
+            background-color: hsl(184, 100%, 22%);
+            button{
+                color:hsl(184, 100%, 22%);
+            }
+            button:hover{
+                color:hsl(0, 0%, 95%);
+            }
+
+        }
+        #luxury{
+            background-color: hsl(179, 100%, 13%);
+            border-radius: 0 10px 10px 0;
+            button{
+                color:hsl(179, 100%, 13%);
+            }
+            button:hover{
+                color:hsl(0, 0%, 95%);
+            }
+
+        }
+        .container{
+            width: 20rem;
+            .elements{
+                padding: 3.1rem;
+                margin-top: -0.2rem;
+                h2{
+                    color:  hsl(0, 0%, 95%);
+                    font-family: 'Big Shoulders Display', cursive;
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                }
+                p{
+                    color: hsla(0, 0%, 100%, 0.75);
+                    font-size: 15px;
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-weight: 400;
+                    margin-bottom: 4.6rem;
+                    width: 120%;
+                    line-height: 2;
+                }
+                button{
+                    background-color:hsl(0, 0%, 95%);
+                    border:none;
+                    height: 3rem;
+                    width: 8.4rem;
+                    font-family: 'Lexend Deca', sans-serif ;
+                    font-size: 15px;
+                    text-align: center;
+                    border-radius: 30px;
+                }
+                button:hover{
+                    cursor: pointer;
+                    border: 3px solid hsl(0, 0%, 95%);
+                    background: transparent;
+                }
+            }
+        }
+    }
+    .attribution{
+        position: relative;
+        top: 24rem;
+        right: 38rem;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 375px){
+    body{
+        margin-top: 3rem;
+        main{
+            flex-direction: column;
+            margin-left: 0.4rem;
+            #sedan{
+                border-radius: 10px 10px 0 0;
+            }
+            #luxury{
+                border-radius: 0 0 10px 10px;
+            }
+            .container{
+                width: 18rem;
+                .elements{
+                    padding: 3rem;
+                    p{
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+        .attribution{
+            visibility: hidden;
+            top: 4rem;
+        }
+    }
+
+}

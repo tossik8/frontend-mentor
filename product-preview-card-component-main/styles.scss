@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    --border-radius: 15px;
+}
+body{
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+}
+
+#product{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    picture{
+        img{
+            width: 320px;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            height: 500px;
+        }
+    }
+    #info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 320px;
+        padding-left: 20px;
+        border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+        background-color: hsl(0, 0%, 100%);
+        p{
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            color:hsl(228, 12%, 48%);
+
+        }
+        #description{
+            width: 230px;
+            line-height: 2.0;
+            margin-top: -5px;
+        }
+        #name{
+            font-weight: 700;
+
+            margin-top: -7px;
+            width: 220px;
+            color: hsl(212, 21%, 14%);
+        }
+        #title{
+            font-weight: 500;
+            font-size: 22px;
+            letter-spacing: 5px;
+        }
+        #price{
+            display: flex;
+            align-items: center;
+            margin-top: -15px;
+            #discount{
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+                color: hsl(158, 36%, 37%);
+                font-size: 28px;
+            }
+            #regular{
+                margin-left: 20px;
+                text-decoration: line-through;
+            }
+        }
+        button{
+            background-color: hsl(158, 36%, 37%);
+            color:hsl(0, 0%, 100%);
+            border: none;
+            border-radius: var(--border-radius);
+            width: 250px;
+            height: 50px;
+            margin-bottom: 20px;
+            font-weight: 700;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: hsl(158, 53%, 23%);
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    #product{
+        top: 7%;
+        left: 5%;
+        width: 93%;
+        picture{
+            img{
+                border-radius: var(--border-radius) var(--border-radius) 0 0;
+                object-fit: cover;
+                display: block;
+                height: 250px;
+                width: 88.15vw;
+
+            }
+        }
+        #info{
+            border-radius: 0 0 var(--border-radius) var(--border-radius);
+            #name{
+                width: 260px;
+            }
+        }
+    }
+}
