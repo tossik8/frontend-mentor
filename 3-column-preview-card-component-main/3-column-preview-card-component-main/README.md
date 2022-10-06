@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:(https://beamish-pavlova-c7ff8a.netlify.app/)
+- Live Site URL: [Netlify](https://beamish-pavlova-c7ff8a.netlify.app/)
 
 ### Built with
 
