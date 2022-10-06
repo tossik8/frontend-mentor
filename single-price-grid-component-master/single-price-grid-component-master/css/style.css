@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204deg, 43%, 93%);
+}
+body main {
+  width: 40rem;
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "a a" "b c";
+}
+body main .elements {
+  padding: 2rem;
+  padding-right: 4rem;
+  padding-bottom: 1.5rem;
+}
+body main .elements h2, body main .elements p {
+  color: hsl(0deg, 0%, 100%);
+}
+body main .elements h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+body main .elements:nth-of-type(1) {
+  grid-area: a;
+  border-radius: 7px 7px 0 0;
+  background-color: hsl(0deg, 0%, 100%);
+}
+body main .elements:nth-of-type(1) h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: hsl(179deg, 62%, 43%);
+}
+body main .elements:nth-of-type(1) .green {
+  color: hsl(71deg, 73%, 54%);
+  margin-top: 1.1rem;
+  margin-bottom: -0.5rem;
+  font-weight: 700;
+}
+body main .elements:nth-of-type(1) p {
+  color: hsl(218deg, 22%, 67%);
+  line-height: 1.5;
+}
+body main .elements:nth-of-type(2) {
+  grid-area: b;
+  background-color: hsl(179deg, 62%, 43%);
+  border-radius: 0 0 0 7px;
+}
+body main .elements:nth-of-type(2) .flex {
+  margin: -2rem 0;
+  display: flex;
+  align-items: center;
+}
+body main .elements:nth-of-type(2) .flex .period {
+  color: hsl(204deg, 43%, 93%);
+}
+body main .elements:nth-of-type(2) .flex .price {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 2rem;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+body main .elements:nth-of-type(2) button {
+  background-color: hsl(71deg, 73%, 54%);
+  width: 103%;
+  height: 3rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1rem;
+}
+body main .elements:nth-of-type(2) .promotion {
+  width: 107%;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+body main .elements:nth-of-type(3) {
+  border-radius: 0 0 7px 0;
+  grid-area: c;
+  background-color: hsl(179deg, 69%, 55%);
+}
+body main .elements:nth-of-type(3) ul {
+  list-style: none;
+  margin-left: -2.5rem;
+  line-height: 1.3;
+}
+body main .elements:nth-of-type(3) ul li {
+  color: hsl(204deg, 43%, 93%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    overflow: hidden;
+  }
+  body main {
+    grid-template-columns: 1fr;
+    grid-template-areas: "a" "b" "c";
+    margin-left: 0.8rem;
+    margin-top: 3rem;
+  }
+  body main .elements {
+    width: 50%;
+    padding-right: 0rem;
+  }
+  body main .elements:nth-of-type(1) p {
+    width: 91%;
+    font-size: 0.9rem;
+  }
+  body main .elements:nth-of-type(2) {
+    border-radius: 0;
+  }
+  body main .elements:nth-of-type(2) button {
+    width: 90%;
+  }
+  body main .elements:nth-of-type(3) {
+    border-radius: 0 0 7px 7px;
+  }
+  body footer {
+    margin-bottom: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
