@@ -23,8 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/tossik8/stats-preview](https://github.com/tossik8/stats-preview)
-- Live Site URL: [https://tossik8.github.io/stats-preview/](https://tossik8.github.io/stats-preview/)
+- Live Site URL: [Netlify](https://thunderous-beijinho-e465a9.netlify.app/)
 
 ## My process
 
