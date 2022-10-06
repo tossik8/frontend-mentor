@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .panel .white-span {
+  color: hsl(0deg, 0%, 100%);
+}
+body main .panel .red-span {
+  color: hsl(0deg, 100%, 74%);
+}
+body main .panel .left-side h1, body main .panel .left-side p {
+  color: hsl(0deg, 0%, 100%);
+}
+body main .panel .right-side .discount, body main .panel .right-side .form {
+  box-shadow: 0px 0.3rem hsla(249deg, 10%, 26%, 0.3);
+}
+body main .panel .right-side .discount {
+  background-color: hsl(248deg, 32%, 49%);
+}
+body main .panel .right-side .discount p {
+  color: hsl(246deg, 25%, 77%);
+}
+body main .panel .right-side .discount .white-span {
+  font-weight: 500;
+}
+body main .panel .right-side .form {
+  background-color: hsl(0deg, 0%, 100%);
+}
+body main .panel .right-side .form form .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+}
+body main .panel .right-side .form form .input input {
+  border: 1px solid hsl(246deg, 25%, 77%);
+  display: block;
+  color: hsl(249deg, 10%, 26%);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+body main .panel .right-side .form form .input input:focus {
+  outline: none !important;
+  border: 1.5px solid hsl(248deg, 32%, 49%);
+}
+body main .panel .right-side .form form .input .red-placeholder::-webkit-input-placeholder {
+  color: hsl(0deg, 100%, 74%);
+}
+body main .panel .right-side .form form .input ::-webkit-input-placeholder {
+  color: hsl(246deg, 25%, 77%);
+  font-weight: 600;
+}
+body main .panel .right-side .form form .input .icon {
+  position: absolute;
+  top: -2.3rem;
+  left: 75%;
+}
+body main .panel .right-side .form form .input .warning.red {
+  color: hsl(0deg, 100%, 74%);
+  font-size: 0.735rem;
+  margin-top: -1rem;
+  font-style: italic;
+  position: relative;
+}
+body main .panel .right-side .form form .input .red-border {
+  outline: none !important;
+  border: 1.5px solid hsl(0deg, 100%, 74%);
+}
+body main .panel .right-side .form form button {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(154deg, 59%, 51%);
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid hsl(154deg, 57%, 44%);
+}
+body main .panel .right-side .form form button:hover {
+  cursor: pointer;
+  filter: brightness(110%);
+}
+body main .panel .right-side .form footer small {
+  color: hsl(246deg, 25%, 77%);
+}
+
+@media screen and (max-width: 1740px) {
+  body {
+    background: url(../images/bg-intro-desktop.png);
+    background-color: hsl(0deg, 100%, 74%);
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  body main {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .panel {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 0.5fr, 1.5fr;
+    grid-template-areas: "a b ";
+  }
+  body main .panel .left-side {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: a;
+  }
+  body main .panel .left-side h1 {
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+  }
+  body main .panel .left-side p {
+    width: 89%;
+  }
+  body main .panel .right-side {
+    grid-area: b;
+    margin-right: 3.5rem;
+  }
+  body main .panel .right-side .discount {
+    text-align: center;
+    padding: 0.3rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+  }
+  body main .panel .right-side .form {
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  body main .panel .right-side .form form .input input {
+    height: 3rem;
+    padding-left: 0.8rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+  }
+  body main .panel .right-side .form form button {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+  }
+  body main .panel .right-side .form footer {
+    padding-top: 1rem;
+  }
+  body main .panel .right-side .form footer small {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background: url(../images/bg-intro-mobile.png);
+    background-color: hsl(0deg, 100%, 74%);
+    overflow: visible;
+  }
+  body main {
+    margin-top: 3rem;
+  }
+  body main .panel {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .panel .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  body main .panel .left-side h1, body main .panel .left-side p {
+    width: 100%;
+  }
+  body main .panel .left-side h1 {
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+  }
+  body main .panel .left-side p {
+    font-size: 0.99rem;
+  }
+  body main .panel .right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+    row-gap: 1rem;
+  }
+  body main .panel .right-side .discount {
+    border-radius: 0.7rem;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  body main .panel .right-side .discount p {
+    width: 80%;
+    margin: 0 auto;
+  }
+  body main .panel .right-side .form {
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+  }
+  body main .panel .right-side .form form .input input {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+  }
+  body main .panel .right-side .form form button {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  body main .panel .right-side footer {
+    width: 85%;
+    font-size: 0.77rem;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,51 @@
+# Frontend Mentor - Intro component with sign up form solution
+
+This is a solution to the [Intro component with sign up form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](#author)
+
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the `form` is submitted if:
+  - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
+
+
+### Links
+
+- Live Site URL: [https://tossik8.github.io/into-component-with-sign-up-form/](https://tossik8.github.io/into-component-with-sign-up-form/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- JS
+
+
+### What I learned
+
+Learned to style placeholder, to add and remove classes in JS, to append elements to a webpage in JS, to align items using flexbox, to position elements using CSS Grid
+
+## Author
+
+- Facebook - [Nikita](https://www.facebook.com/nikita.toropov.54)
+- Frontend Mentor - [@tossik8](https://www.frontendmentor.io/profile/tossik8)

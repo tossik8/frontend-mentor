@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    main{
+        .panel{
+            .white-span{
+                color: hsl(0,0%,100%);
+            }
+            .red-span{
+                color: hsl(0, 100%, 74%);
+            }
+            .left-side{
+                h1, p{
+                    color: hsl(0,0%,100%);
+                }
+
+            }
+            .right-side{
+                .discount,.form{
+                    box-shadow: 0px 0.3rem hsla(249, 10%, 26%, 0.3);
+                }
+                .discount{
+                    p{
+                        color: hsl(246, 25%, 77%);
+                    }
+                    .white-span{
+                        font-weight: 500;
+                    }
+                    background-color: hsl(248, 32%, 49%);
+                }
+                .form{
+                    background-color: hsl(0,0%,100%);
+                    form{
+                        .input{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: right;
+                            align-items: flex-end;
+                            input{
+                                border: 1px solid hsl(246, 25%, 77%);
+                                display: block;
+                                color: hsl(249, 10%, 26%);
+                                font-weight: 700;
+                                font-size: 1.1rem;
+
+                            }
+                            input:focus{
+                                outline: none !important;
+
+                                border: 1.5px solid hsl(248, 32%, 49%);
+                            }
+                            .red-placeholder::-webkit-input-placeholder{
+                                color: hsl(0, 100%, 74%);
+                            }
+
+                            ::-webkit-input-placeholder{
+                                color: hsl(246, 25%, 77%);
+                                font-weight: 600;
+
+                            }
+
+                            .icon{
+                                position: absolute;
+                                top: -2.3rem;
+                                left: 75%;
+                            }
+                            .warning.red{
+                                color: hsl(0, 100%, 74%);
+                                font-size: 0.735rem;
+                                margin-top: -1rem;
+                                font-style: italic;
+                                position: relative;
+
+                            }
+                            .red-border{
+                                outline: none !important;
+                                border: 1.5px solid hsl(0, 100%, 74%);
+                            }
+                        }
+
+                        button{
+                            color: hsl(0,0%,100%);
+                            background-color: hsl(154, 59%, 51%);
+                            font-weight: 500;
+                            border:none;
+                            border-bottom: 2px solid hsl(154, 57%, 44%);
+                        }
+                        button:hover{
+                            cursor: pointer;
+                            filter: brightness(110%);
+                        }
+                    }
+                    footer{
+                        small{
+                            color: hsl(246, 25%, 77%);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 1740px) {
+    body{
+        background: url(../images/bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+        min-height: 100vh;
+        overflow: hidden;
+        main{
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .panel{
+                width: 80%;
+                display: grid;
+                grid-template-columns: 0.5fr, 1.5fr;
+                grid-template-areas: "a b ";
+
+                .left-side{
+                    min-height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    grid-area: a;
+
+                    h1{
+                        margin-bottom: -0.5rem;
+                        font-size: 3rem;
+                    }
+                    p{
+                        width:89%;
+                    }
+                }
+                .right-side{
+                    grid-area: b;
+                    margin-right: 3.5rem;
+                    .discount{
+                        text-align: center;
+                        padding: 0.3rem;
+                        border-radius: 1rem;
+                        margin-bottom: 2rem;
+                    }
+                    .form{
+                        padding: 2rem;
+                        border-radius: 0.5rem;
+
+                        form{
+                            .input{
+                                input{
+                                    height: 3rem;
+                                    padding-left: 0.8rem;
+                                    width: 100%;
+                                    margin-bottom: 1rem;
+                                    border-radius: 0.3rem
+                                }
+                            }
+
+
+                            button{
+                                width: 100%;
+                                padding: 0.9rem;
+                                font-size: 1.1rem;
+                                border-radius: 0.3rem;
+                            }
+                        }
+                        footer{
+                            padding-top: 1rem;
+                            small{
+                                font-size: 0.8rem;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 375px){
+    body{
+        background: url(../images/bg-intro-mobile.png);
+        background-color: hsl(0, 100%, 74%);
+        overflow: visible;
+        main{
+            margin-top: 3rem;
+            .panel{
+                width: 95%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .left-side{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    h1,p{
+                        width: 100%;
+                    }
+                    h1{
+                        font-size: 2rem;
+                        margin-bottom: 0.2rem;
+                    }
+                    p{
+                        font-size: 0.99rem;
+                    }
+
+                    margin-bottom: 3rem;
+                }
+                .right-side{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+
+                    margin-right: 0;
+                    row-gap: 1rem;
+                    .discount{
+                        border-radius: 0.7rem;
+                        padding: 1rem;
+                        width: 100%;
+                        p{
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                        margin-bottom: 0.5rem;
+                    }
+                    .form{
+
+                        padding: 1.5rem;
+                        border-radius: 0.7rem;
+                        form{
+                            .input{
+                                input{
+                                    width: 100%;
+                                    margin-bottom: 1rem;
+                                    height: 3rem;
+                                    border-radius: 0.3rem;
+                                    padding-left: 1rem;
+
+                                }
+                            }
+
+                            button{
+                                width: 100%;
+                                height: 3.5rem;
+                                border-radius: 0.3rem;
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                            }
+                        }
+
+                    }
+                    footer{
+
+                        width: 85%;
+                        font-size: 0.77rem;
+                        margin: 0 auto;
+                    }
+                }
+
+            }
+        }
+    }
+}

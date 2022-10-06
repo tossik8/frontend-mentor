@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    font-family: 'Josefin Sans', sans-serif;
+    main{
+        .panel{
+            .info{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    color: hsl(0, 6%, 24%);
+                    font-weight: 600;
+                    span{
+                        font-weight: 300;
+                    }
+                }
+                p, span{
+                    color: hsl(0, 36%, 70%);
+                }
+                form{
+                    .input{
+                        input{
+                            color:hsl(0, 6%, 24%);
+                            font-weight: 600;
+                            border: 1px solid hsl(0, 28%, 85%);
+                            background-color: transparent;
+                        }
+                        input:focus{
+                            outline: none !important;
+                        }
+                        ::-webkit-input-placeholder{
+                            font-weight: 300;
+                            color:hsl(0, 36%, 70%);
+                        }
+                        .red-border{
+                            outline: none !important;
+                            border: 2px solid hsl(0, 93%, 68%);
+                        }
+                    }
+                    button{
+                        border:none;
+                        color: hsl(0, 0%, 100%);
+                        background: linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%));
+                    }
+
+                    button:hover{
+                        filter: brightness(110%);
+                        cursor: pointer;
+                    }
+                }
+                .warning-text{
+                    position: relative;
+                    color: hsl(0, 93%, 68%);
+                    font-size: 0.7rem;
+                }
+                .warning-icon{
+                    position: relative;
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+        main{
+            .panel{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                header{
+                    position: absolute;
+                    top: 1.7rem;
+                    left: 2rem;
+
+                }
+                .picture{
+                    margin-top: 5rem;
+                    img{
+                        max-width: 100%;
+                        display: block;
+                        margin: 0 auto;
+
+                    }
+                }
+                .info{
+
+                    h1{
+
+                        font-size: 2.7rem;
+                        letter-spacing: 0.5rem;
+                    }
+                    p{
+                        margin-top: -0.6rem;
+                        line-height: 1.3;
+                        font-size: 0.935rem;
+                        width: 90%;
+                    }
+                    h1, p{
+                        text-align: center;
+                    }
+                    form{
+                        width: 83%;
+                        .input{
+                            margin-top: 1.5rem;
+                            width: 100%;
+                            input{
+                                width: 100%;
+                                height: 3rem;
+                                border-radius: 1.5rem;
+                                padding: 0 1rem;
+
+
+                            }
+                        }
+                        button{
+                            position: relative;
+                            left: 75.7%;
+                            top: -3rem;
+                            height: 3rem;
+                            width: 25%;
+                            border-radius: 3rem;
+
+                        }
+                        .warning-text{
+                            top: -2rem;
+                            left: -12%;
+                        }
+                        .warning-icon{
+                            top: -6.2rem;
+                            left: 66%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 375px){
+    body{
+        overflow: hidden;
+        justify-content: center;
+        main{
+
+            margin: 0 auto;
+            .panel{
+                display: grid;
+                grid-template-columns: 59% 41%;
+                grid-template-areas: "a b";
+                header{
+                    position: absolute;
+                    top: 4rem;
+                    left: 12%;
+                }
+                .picture{
+                    grid-area: b;
+
+                    img{
+                        min-height: 100vh;
+                        min-width: 100%;
+                        max-width: 100%;
+                    }
+                }
+                .info{
+
+                    align-items: flex-start;
+                    background: url(../images/bg-pattern-desktop.svg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    padding-left: 20%;
+                    grid-area: a;
+                    width: 80%;
+                    h1{
+                        font-size: 4rem;
+                        letter-spacing: 1rem;
+
+
+                    }
+                    p{
+                        width: 85%;
+                        line-height: 1.3;
+                        font-size: 1rem;
+                        margin-top: -1.5rem;
+                    }
+                    form{
+                        margin-top: 1.5rem;
+                        width: 82%;
+                        .input{
+                            width: 100%;
+                            input{
+                                width: 100%;
+                                height: 3rem;
+                                padding: 0 1rem;
+                                border-radius: 1.5rem;
+                            }
+                        }
+                        button{
+                            width: 23%;
+                            height: 3rem;
+                            border-radius: 3rem;
+                            position: relative;
+                            left: 80%;
+                            top: -3rem;
+                        }
+                        .warning-text{
+                            top: -1rem;
+                            left: 1.5rem;
+                        }
+                        .warning-icon{
+                            top: -67%;
+                            left: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            position: absolute;
+            top: 43rem;
+            left: 12%;
+        }
+    }
+}

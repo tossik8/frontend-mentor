@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(185deg, 75%, 39%);
+  background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 58%;
+  background-position: bottom -20rem right -12rem, top -25rem left -8rem;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body main .panel {
+  background-color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  width: 100%;
+  border-radius: 1rem;
+}
+body main .panel .background {
+  background: url(../images/bg-pattern-card.svg);
+  width: 100%;
+  height: 8rem;
+  border-radius: 1rem 1rem 0 0;
+}
+body main .panel .photo {
+  border-radius: 10rem;
+  border: 4px solid hsl(0deg, 0%, 100%);
+  position: relative;
+  top: -3rem;
+}
+body main .panel .name {
+  color: hsl(229deg, 23%, 23%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: -0.5rem;
+  margin-top: -2rem;
+}
+body main .panel .name span {
+  color: hsl(227deg, 10%, 46%);
+  font-weight: 500;
+}
+body main .panel .location {
+  color: hsl(227deg, 10%, 46%);
+}
+body main .panel hr {
+  background-color: hsl(0deg, 0%, 59%);
+  height: 0.001rem;
+  margin-top: 2rem;
+}
+body main .panel .data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: -0.5rem;
+  padding-bottom: 1rem;
+}
+body main .panel .data .flex-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body main .panel .data .flex-container .number {
+  color: hsl(229deg, 23%, 23%);
+  margin-bottom: -0.5rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+body main .panel .data .flex-container .description {
+  color: hsl(227deg, 10%, 46%);
+  font-size: 0.85rem;
+}
+body footer {
+  padding-top: 4rem;
+  text-align: center;
+  width: 80%;
+}
+body footer attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body footer attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 1740px) {
+  body main {
+    width: 21rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-position: bottom -10rem right -20rem, top -10rem left -20rem;
+    background-size: 140%;
+  }
+  body main {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

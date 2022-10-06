@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    main{
+        font-family: 'League Spartan', sans-serif;
+        .panel{
+
+            .intro{
+                h1{
+                    color: hsl(300, 43%, 22%);
+                    font-weight: 700;
+                }
+                p{
+                    color: hsl(303, 10%, 53%)
+                }
+            }
+            .ratings{
+                .rating{
+                    background-color: hsl(300, 24%, 96%);
+                    p{
+                        color: hsl(300, 43%, 22%);
+                        font-weight: 700;
+                    }
+                }
+            }
+            .reviews{
+                .review{
+                    background-color:hsl(300, 43%, 22%);
+                    .details{
+                        .name{
+                            font-weight: 500;
+                            color: hsl(0, 0%, 100%);
+                        }
+
+                        .red-paragraph{
+                            color: hsl(333, 80%, 67%);
+                        }
+                    }
+                    .comment{
+                        color: hsl(0, 0%, 100%);
+                    }
+
+
+                }
+            }
+        }
+    }
+    footer{
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+          }
+    }
+}
+@media screen and (max-width: 1740px) {
+    body{
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 40%, contain;
+        background-position: top left, bottom right -18rem ;
+
+
+        main{
+            margin: 5rem 10rem;
+            .panel{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "a b" "c c";
+                row-gap: 4rem;
+                .intro{
+                    grid-area: a;
+                    h1{
+                        font-size: 4rem;
+                        width: 100%;
+                    }
+
+                    P{
+                        line-height: 1.3;
+                        width: 80%;
+                    }
+
+                }
+                .ratings{
+                    grid-area: b;
+                    width: 40rem;
+                    margin-top: 3.5rem;
+                    padding-left: 5rem;
+                    .rating{
+                        padding: 0.5rem;
+                        margin-bottom: 1rem;
+                        border-radius: 0.6rem;
+                        width: 70%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        gap: 8%;
+                        .stars{
+                            margin-left: 4%;
+                        }
+                    }
+                    .rating:nth-of-type(2){
+                        margin-left: 8%;
+                    }
+                    .rating:nth-of-type(3){
+                        margin-left: 16%;
+                    }
+                }
+                .reviews{
+                    grid-area: c;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom:-4rem;
+                    gap: 2rem;
+                    .review{
+                        width: 31%;
+                        padding: 1rem;
+                        border-radius: 0.6rem;
+                        height: 15rem;
+
+                        .person{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 5%;
+                            align-items: center;
+                            .red-paragraph{
+                                margin-top: -0.5rem;
+                            }
+                              img{
+                                width: 3rem;
+                                height: 3rem;
+                                border-radius: 2rem;
+                            }
+
+                        }
+                        .comment{
+                            line-height: 1.3;
+                            width: 90%;
+
+                        }
+                    }
+                    .review:nth-of-type(2){
+                        margin-top: 0.7rem;
+                    }
+                    .review:nth-of-type(3){
+                        margin-top: 1.4rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 375px) {
+    body{
+        padding: 1rem;
+        background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 99.15%;
+        background-position: top left, top 63rem left;
+        main{
+            width: 100%;
+            .panel{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .intro{
+                    margin-bottom: -2.5rem;
+
+                    h1{
+                        font-size: 3rem;
+                        margin-bottom: 0rem;
+                        width: 100%;
+                    }
+                    p{
+                        width: 90%;
+                        line-height: 1.3;
+
+                    }
+                    text-align: center;
+                }
+                .ratings{
+                    width: 100%;
+                    margin-bottom: -2rem;
+                    margin-top: 0;
+                    padding-left: 0;;
+                    .rating{
+                        width: 100%;
+                        padding: 0.6rem;
+                        margin-bottom: 1rem;
+                        padding-bottom: 0;
+                        border-radius: 0.5rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        p{
+                            margin-top: 0.6rem;
+
+                        }
+                    }
+                    .rating:nth-of-type(2){
+                        margin-left: 0;
+                    }
+                    .rating:nth-of-type(3){
+                        margin-left: 0;
+                    }
+
+                }
+                .reviews{
+                    .review{
+                        padding: 2rem;
+                        width: 100%;
+                        height: 25%;
+                        margin-bottom: -1rem;
+                        border-radius: 0.6rem;
+                        .person{
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+
+                            img{
+                                width: 3rem;
+                                height: 3rem;
+                                border-radius: 20rem;
+                            }
+                            .details{
+                                .red-paragraph{
+                                    margin-top: -0.5rem;
+                                }
+                            }
+                            gap: 5%;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

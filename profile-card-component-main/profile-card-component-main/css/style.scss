@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(../images/bg-pattern-bottom.svg), url(../images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 58%;
+    background-position: bottom -20rem right -12rem, top -25rem left -8rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    main{
+
+        .panel{
+            background-color: hsl(0, 0%, 100%);
+            text-align: center;
+            width:  100%;
+            border-radius: 1rem;
+            .background{
+                background: url(../images/bg-pattern-card.svg);
+                width: 100%;
+                height: 8rem;
+                border-radius: 1rem 1rem 0 0;
+            }
+            .photo{
+                border-radius: 10rem;
+                border: 4px solid hsl(0, 0%, 100%);
+                position: relative;
+                top: -3rem;
+
+            }
+            .name{
+                color: hsl(229, 23%, 23%);
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin-bottom: -0.5rem;
+                margin-top: -2rem;
+            }
+            .name{
+                span{
+                    color: hsl(227, 10%, 46%);
+                    font-weight: 500;
+                }
+            }
+            .location{
+                color: hsl(227, 10%, 46%);
+
+            }
+            hr{
+                background-color: hsl(0, 0%, 59%);
+                height: 0.001rem;
+                margin-top: 2rem;
+            }
+            .data{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                justify-content: center;
+                margin-top: -0.5rem;
+                padding-bottom: 1rem;
+                .flex-container{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+
+                    .number{
+                        color: hsl(229, 23%, 23%);
+                        margin-bottom: -0.5rem;
+                        font-weight: 700;
+                        font-size: 1.3rem;
+
+                    }
+                    .description{
+                        color: hsl(227, 10%, 46%);
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        padding-top: 4rem;
+        text-align: center;
+        width: 80%;
+        attribution {
+            font-size: 11px;
+
+            text-align: center;
+
+            a{
+                color: hsl(228, 45%, 44%);
+
+            }
+         }
+    }
+}
+@media screen and (max-width: 1740px) {
+    body{
+        main{
+            width: 21rem;
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    body{
+        background-position: bottom -10rem right -20rem , top -10rem left -20rem;
+        background-size:140%;
+
+        main{
+            width: 90%;
+        }
+    }
+}
