@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://tossik8.github.io/into-component-with-sign-up-form/](https://tossik8.github.io/into-component-with-sign-up-form/)
+- Live Site URL: [Netlify](https://stalwart-puppy-60c17d.netlify.app/)
 
 ## My process
 
