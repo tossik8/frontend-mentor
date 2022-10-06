@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://tossik8.github.io/join-a-community-page/](https://tossik8.github.io/join-a-community-page/)
+- Live Site URL: [Netlify](https://flourishing-torte-3f127b.netlify.app/)
 
 ## My process
 
