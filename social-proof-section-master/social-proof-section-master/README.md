@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://tossik8.github.io/social-proof/](https://tossik8.github.io/social-proof/)
+- Live Site URL: [Netlify](https://fabulous-faun-f346b9.netlify.app/)
 
 ## My process
 
