@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background: url("../images/pattern-background-desktop.svg") no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(225deg, 100%, 94%);
+}
+body main {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 26.33vw;
+  border-radius: 20px;
+  text-align: center;
+}
+body main h1, body main .title {
+  color: hsl(223deg, 47%, 23%);
+}
+body main h1 {
+  font-weight: 900;
+  font-size: 1.85rem;
+}
+body main p {
+  font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
+}
+body main .shorter {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 1.5rem;
+}
+body main .hero {
+  border-radius: 20px 20px 0 0;
+  width: 26.33vw;
+}
+body main .flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+body main .flex .flex2 {
+  margin-right: 6.5rem;
+  margin-left: 1.3rem;
+}
+body main .flex .flex2 .title {
+  margin-top: 1rem;
+  font-weight: 900;
+}
+body main .flex .flex2 .price {
+  margin-top: -0.6rem;
+}
+body main .flex a {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+body main .flex a:hover {
+  color: hsl(266deg, 66%, 62%);
+  text-decoration: none;
+}
+body main .proceed, body main .cancel {
+  width: 80%;
+  border: none;
+  height: 3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+body main .proceed {
+  background-color: hsl(245deg, 75%, 52%);
+  border-radius: 10px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+}
+body main .cancel {
+  background-color: transparent;
+  color: hsl(224deg, 23%, 55%);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+body main .proceed:hover {
+  background-color: hsl(266deg, 66%, 62%);
+}
+body main .cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background: url(../images/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: hsl(225deg, 100%, 94%);
+  }
+  body main {
+    width: 90vw;
+  }
+  body main .hero {
+    width: 90vw;
+  }
+  body main h1 {
+    font-size: 1.45rem;
+  }
+  body main .flex {
+    width: 80%;
+  }
+  body main .flex img {
+    margin-right: -0.5rem;
+  }
+  body main .flex .flex2 {
+    margin-right: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

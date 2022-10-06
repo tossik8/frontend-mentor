@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    p{
+        color: hsl(229, 6%, 66%);
+        font-size: 0.998rem;
+        font-weight: 400;
+    }
+    h1,h2{
+        color: hsl(234, 12%, 34%);
+        font-weight: 600;
+    }
+    header{
+        text-align: center;
+        width: 32vw;
+        margin: 0 auto;
+        margin-top: 3rem;
+        .big-text{
+            font-size: 2rem;
+            font-weight: 200;
+            margin-bottom: -1.5rem;
+        }
+
+    }
+    main{
+        section{
+            display:flex;
+            .info{
+                background-color: hsl(0, 0%, 100%);
+                width: 24rem;
+                border-radius: 5px;
+                box-shadow: 0 10px 10px hsl(231, 58%, 95%);
+                .top-bar{
+                    height: 0.2rem;
+                    border-radius: 5px 5px 0 0;
+                }
+                h2,p{
+                    margin-left: 1.5rem;
+                }
+                h2{
+                    margin-bottom: -0.4rem;
+                }
+                img{
+                    margin: 2rem 0 2.5rem 18.5rem;
+
+                }
+            }
+            .info:nth-of-type(1){
+                .top-bar{
+                    background-color: hsl(180, 62%, 55%);
+                }
+            }
+            .info:nth-of-type(2){
+                .top-bar{
+                    background-color: hsl(0, 78%, 62%);
+                }
+            }
+            .info:nth-of-type(3){
+                .top-bar{
+                    background-color: hsl(34, 97%, 64%);
+                }
+            }
+            .info:nth-of-type(4){
+                .top-bar{
+                    background-color: hsl(212, 86%, 64%);
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1545px){
+    body{
+
+        main{
+            section{
+                justify-content: center;
+                .info{
+                    position: relative;
+
+
+
+                }
+                .info:nth-of-type(1) {
+                    left: 10.5rem;
+                    top: 10rem;
+
+                }
+                .info:nth-of-type(2) {
+                    left: 12rem;
+
+
+                }
+                .info:nth-of-type(3){
+                    top: 19rem;
+                    left: -11.95rem;
+
+                }
+                .info:nth-of-type(4) {
+                    top: 10.1rem;
+                    left: -10.1rem;
+
+                }
+            }
+
+        }
+        footer{
+            margin-top: 20rem;
+        }
+    }
+}
+@media screen and (max-width: 1545px){
+    body{
+        header{
+            p:nth-of-type(2){
+                width: 110%;
+            }
+        }
+        main{
+            section{
+
+                margin: 3rem 0 0 3rem;
+
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+
+                column-gap: 1rem;
+                justify-content: center;
+                align-items: center;
+                .info{
+                    position: unset;
+                    img{
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                .info:nth-of-type(1){
+
+                    grid-column: 1;
+                    margin-top: 8rem;
+                    margin-left: 3rem;
+
+                }
+                .info:nth-of-type(2){
+                    grid-column: 2;
+                    margin-top: -12rem;
+                }
+                .info:nth-of-type(3){
+                    grid-column: 2;
+                    margin-top: -10rem;
+
+                }
+                .info:nth-of-type(4){
+                    grid-column: 3;
+                    margin-top: -24rem;
+                    margin-left: -3rem;
+
+
+                }
+
+            }
+        }
+        footer{
+            margin-top: -0.3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    body{
+        header{
+            width: 100%;
+            margin-bottom: 60px;
+            h1, .big-text{
+                font-size:1.5rem;
+            }
+            .big-text{
+                margin-left: 0.55rem;
+            }
+            p{
+
+                width: 95%;
+
+            }
+
+        }
+        main{
+            section{
+                margin-left: 2rem;
+                flex-direction: column;
+                row-gap: 2rem;
+                .info{
+                    position: unset;
+                    width: 90%;
+                    p{
+                        font-size: 0.75rem;
+                        width: 80%;
+                    }
+                    img{
+                        margin-left:12.5rem;
+                    }
+                }
+            }
+        }
+        footer{
+            margin-top: 3rem;
+        }
+    }
+}
