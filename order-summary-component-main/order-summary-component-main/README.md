@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://tossik8.github.io/order-summary/](https://tossik8.github.io/order-summary/)
+- Live Site URL: [Netlify](https://luxury-mandazi-90ee19.netlify.app/)
 
 ## My process
 
