@@ -24,11 +24,14 @@ body{
                         display: flex;
                         img{
                             object-fit: contain;
+                            transition: transform 0.6s ease;
                         }
 
                         .question{
                             color: hsl(237, 12%, 33%);
                             font-weight: 400;
+                            font-size: 0.75rem;
+
                         }
                         .question.bold{
                             font-weight: 700;
@@ -37,10 +40,18 @@ body{
                             color: hsl(14, 88%, 65%);
                             cursor: pointer;
                         }
+                        .rotate-img{
+                            transform: rotate(180deg);
+                            transition: transform 0.5s ease-in;
+                        }
 
                     }
                     .answer{
                         color: hsl(240, 6%, 50%);
+                        font-size: 0.75rem;
+                        margin-top: -0.3rem;
+                        width: 86%;
+
                     }
                     hr{
                         background-color: hsl(240, 5%, 91%);
@@ -59,9 +70,11 @@ body{
         }
     }
 }
-@media screen and(max-width: 375px){
+@media screen and(max-width: 376px){
     body{
         main{
+            margin-top: 5rem;
+            width: 90%;
             .panel{
                 display: flex;
                 flex-direction: column;
@@ -69,16 +82,17 @@ body{
                 padding: 0 1.5rem 3rem;
 
                 .image{
-                    background: url(../images/bg-pattern-mobile.svg)no-repeat;
-                    position: relative;
-                    background-position: top left 49%;
-                    width: 100%;
+                    background: url(../images/bg-pattern-mobile.svg) no-repeat;
+                    background-position: top 1.5rem left 1.5rem;
+                    background-size: 80%;
+
                     img{
                         position: relative;
-                        left: 10%;
-                        top: -7rem;
-                        width: 15rem;
+                        width: 80%;
+                        top: -20vw;
+                        left: 1.5rem;
                     }
+
                 }
                 .info{
                     h1{
@@ -86,6 +100,98 @@ body{
                         text-align: center;
                         font-size: 2.1rem;
                     }
+                    article{
+                        .flex{
+                            .question{
+                                width: 80%;
+                            }
+                        }
+                    }
+
+                    .question-article:nth-of-type(1){
+                        .flex{
+                            gap: 3.8rem;
+                        }
+                    }
+                    .question-article:nth-of-type(2){
+                        .flex{
+                            gap: 3.9rem;
+                        }
+                    }
+                    .question-article:nth-of-type(3){
+                        .flex{
+                            gap: 23.4%
+                        }
+                    }
+                    .question-article:nth-of-type(4){
+                        .flex{
+                            gap: 22.4%;
+                        }
+                    }
+                    .question-article:nth-of-type(5){
+                        .flex{
+                            gap: 3.4rem;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media screen and(min-width: 376px) {
+    body{
+        main{
+            width: 70%;
+            .panel{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "a b";
+
+                .image{
+                    grid-area: a;
+
+                    .woman-container{
+                        overflow: hidden;
+                        background: url(../images/bg-pattern-desktop.svg) no-repeat;
+                        background-size:auto;
+                        background-position: top -13rem left -29rem;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        .woman{
+                            position: relative;
+                            left: -4vw;
+                            width: 35rem;
+                            margin-top: 10%;
+                        }
+                    }
+                    .box{
+                        position: absolute;
+                        width: 13rem;
+                        top: 45.5vh;
+                        left: 10%;
+                        margin-bottom: -10rem;
+                    }
+                }
+                .info{
+                    grid-area: b;
+                    width: 80%;
+                    padding: 4rem 0;
+                    article{
+                        .flex{
+                            justify-content: space-between;
+                            .question{
+                                font-size: 1rem;
+                            }
+
+                        }
+                        .answer{
+                            font-size: 0.8rem;
+                        }
+                    }
+
                 }
             }
         }
